@@ -11,3 +11,5 @@ filebeat.inputs:
       - ./nginx/logs/*.log  # Adjust the path as needed
     fields:
       log_type: nginx
+output.logstash:
+  hosts: ["logstash_host:5044"]
